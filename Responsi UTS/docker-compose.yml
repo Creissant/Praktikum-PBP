@@ -1,0 +1,33 @@
+version: '3.0'
+services:
+  responsi:
+    container_name: responsi-app
+    restart: on-failure:5
+    depends_on:
+      - db
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/responsi
+
+  phpmyadmin:
+    container_name: responsi-phpmyadmin
+    image: phpmyadmin:latest
+    depends_on:
+      - db
+    restart: on-failure:5
+    ports:
+      - 8081:80
+    environment:
+      PMA_HOST: db
+
+  db:
+    container_name: responsi-mysql
+    image: mysql:latest
+    restart: on-failure:5
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_PASSWORD: password
+      MYSQL_ROOT_PASSWORD: root

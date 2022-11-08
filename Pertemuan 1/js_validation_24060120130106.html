@@ -1,0 +1,112 @@
+<!-- Fahrel Gibran Alghany -->
+<!-- 24060120130106 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="js_validation.js"></script>
+  <title>JS Validation</title>
+</head>
+<body>
+  <h1>Form Tambah Data Produk</h1>
+  <form action="">
+    <table>
+      <tr>
+        <td>
+          Nama Produk
+      </td>
+      <td>
+        <input type="text" name="nama" required minlength="5" maxlength="30">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Deskripsi
+      </td>
+      <td>
+        <textarea name="deskripsi" required minlength="5" maxlength="100" id="" cols="20" rows="5"></textarea>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Kategori
+      </td>
+      <td>
+        <select name="kategori" id="kategori" required onchange="createSubcategory()">
+          <option value="" selected disabled >--Pilih Kategori--</option>
+          <option value="baju">Baju</option>
+          <option value="elektronik">Elektronik</option>
+          <option value="alat-tulis">Alat Tulis</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Sub Kategori
+      </td>
+      <td>
+        <select name="sub-kategori" id="sub-kategori" required>
+          <option value="" selected disabled >--Pilih Sub Kategori--</option>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Harga Satuan
+      </td>
+      <td>
+        <input type="number" required name="harga-satuan" id="">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Grosir
+      </td>
+      <td>
+        <input required type="radio" name="grosir" id="grosir-y" onchange="checkGrosir()" value="y"> Ya <br>
+        <input required type="radio" name="grosir" id="grosir-n" onchange="checkGrosir()" value="n"> Tidak
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Harga Grosir
+      </td>
+      <td>
+        <input type="number" name="harga-grosir" id="harga-grosir">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Jasa Kirim
+      </td>
+      <td>
+        <!-- Minimal pilih tiga -->
+        <input type="checkbox" class="checkbox-kurir" name="kurir" id="kurir1" onchange="validateCheckbox()"> JNE <br>
+        <input type="checkbox" class="checkbox-kurir" name="kurir" id="kurir2" onchange="validateCheckbox()"> TIKI <br>
+        <input type="checkbox" class="checkbox-kurir" name="kurir" id="kurir3" onchange="validateCheckbox()"> SiCepat <br>
+        <input type="checkbox" class="checkbox-kurir" name="kurir" id="kurir4" onchange="validateCheckbox()"> Ninja Express <br>
+        <input type="checkbox" class="checkbox-kurir" name="kurir" id="kurir5" onchange="validateCheckbox()"> Wahana <br>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        Captcha
+      </td>
+      <td>
+        <input type="text" name="" disabled id="captcha" size="7">
+        <input type="text" name="" required id="captcha-answer" size="7" onchange="validateCaptcha()">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <button type="submit">Submit</button>
+        <button type="button">Reset</button>
+      </td>
+    </tr>
+  </table>
+</form>
+</body>
+</html>
