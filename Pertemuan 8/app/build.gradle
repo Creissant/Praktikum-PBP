@@ -3,12 +3,12 @@ plugins {
 }
 
 android {
-    namespace 'com.example.pertemuan8'
+    namespace 'com.example.praktikum_1'
     compileSdk 32
 
     defaultConfig {
-        applicationId "com.example.pertemuan8"
-        minSdk 22
+        applicationId "com.example.praktikum_1"
+        minSdk 21
         targetSdk 32
         versionCode 1
         versionName "1.0"
