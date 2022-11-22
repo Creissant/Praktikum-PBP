@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">MyViewAndViews</string>
+    <string name="content_text">
+        The ROG Zephyrus M16 2022 is a refreshed and upgunned incarnation of last year’s model with hardware updates that include a 12th Gen Intel Core processor, the addition of an MUX switch for better performance and a bumped up GPU while retaining the svelte aesthetics of its predecessor.
+    </string>
+    <string name="content_specs_display">16-inch WQXGA (2,560 x 1,600)\nAdaptive-Sync LCD\n165Hz, 500 nits, 3ms\n100% DCI-P3, Pantone Validated, Dolby Vision HDR
+    </string>
+    <string name="content_specs_size">355 x 243 x 19.9mm / 1.9kg</string>
+    <string name="content_specs_battery">90Wh 4-cell Li-ion w/ 240W AC adaptor + 12A 240W USB C adaptor</string>
+    <string name="stock">Stock hanya 69 buah</string>
+    <string name="specification">Spesifikasi</string>
+    <string name="display">Display</string>
+    <string name="size">Size</string>
+    <string name="battery">Battery</string>
+    <string name="seller">Dijual oleh</string>
+    <string name="my_name">Mikasa Ackermann</string>
+    <string name="buy">Beli</string>
+    <string name="dummy_value">$2,899.00</string>
+    <string name="dummy_photos">6 photos</string>
+    <string name="kembali">Kembali</string>
+    <string name="barang_berhasil_dibeli">Barang berhasil dibeli!</string>
+    <string name="hubungi_customer">Hubungi Customer</string>
+</resources>
