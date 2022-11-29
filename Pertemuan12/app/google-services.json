@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "150377765915",
+    "firebase_url": "https://prak-pbp-249e6-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "prak-pbp-249e6",
+    "storage_bucket": "prak-pbp-249e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:150377765915:android:d1c9b511cff6e56eef6cbe",
+        "android_client_info": {
+          "package_name": "com.example.pertemuan12"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "150377765915-qjpfpiq47bk7neoh43pb5cpd6fkmjvh2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0aGkFBw2GNHDaCHdlmgT2X6Ik3qDAq9E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "150377765915-qjpfpiq47bk7neoh43pb5cpd6fkmjvh2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
